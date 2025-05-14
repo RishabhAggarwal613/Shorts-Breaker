@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Reel Tab Terminator",
+  "version": "1.1",
+  "description": "Closes YouTube Shorts, Instagram Reels, and Facebook Reels even in SPAs.",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": [
+    "*://*.instagram.com/*",
+    "*://*.facebook.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
